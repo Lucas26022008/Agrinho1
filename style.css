@@ -3,6 +3,7 @@ body{
     color: white;
 }
 .banner{
-    width: 50%;
+    width: auto;
     height: auto;
+    padding: 10px;
 }
