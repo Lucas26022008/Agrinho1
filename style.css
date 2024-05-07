@@ -5,6 +5,11 @@
         color: white;
     }
 
+    h1{
+        text-align: center;
+        color: red;
+    }
+
     .banner {
         max-width: 100%;
         height: auto;
