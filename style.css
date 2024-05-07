@@ -14,6 +14,11 @@
         text-align: center;
     }
 
+    .seta{
+        max-width: 50%;
+        height: auto;
+    }
+
     .banner {
         max-width: 100%;
         height: auto;
