@@ -17,7 +17,8 @@
     .seta{
         max-width: 50%;
         height: auto;
-        text-align: center;
+        display: grid;
+        place-items: center;
     }
 
     .banner {
