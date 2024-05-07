@@ -2,8 +2,15 @@ body{
     background-color: black;
     color: white;
 }
-.banner{
-    width: 100%;
+.banner {
+    max-width: 100%;
     height: auto;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.banner img {
+    max-width: 100%;
+    height: auto;
 }
