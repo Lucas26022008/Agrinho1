@@ -1,0 +1,18 @@
+header{
+    background-color: #a9eca2;
+}
+
+#logoreni{
+    height: 124px;
+    width: auto;
+    position: absolute;
+    right: 100px;
+}
+.imagem{
+    height: 500px;
+    width: auto;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
