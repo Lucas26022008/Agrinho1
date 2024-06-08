@@ -1,27 +1,21 @@
-header{
-    background-color: #a9eca2;
-}
-
-#logoreni{
-    height: 124px;
-    width: auto;
-    position: absolute;
-    right: 100px;
-}
-.imagem{
-    height: 500px;
-    width: auto;
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+}
+
+header{
+    background-color: #a9eca2;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+p {
+    color: #666666;
 }
 
 .container {
@@ -47,11 +41,17 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    margin-top: 0;
-    color: #333333;
+#logoreni{
+    height: 124px;
+    width: auto;
+    position: absolute;
+    right: 100px;
 }
-
-p {
-    color: #666666;
+.imagem{
+    height: 500px;
+    width: auto;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
 }
