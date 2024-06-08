@@ -23,7 +23,8 @@ p {
 .butao--entrar{
     font-family: "Nunito", sans-serif;
     background-color: transparent;
-    color: red;
+    color: black;
+    font-weight: bold;
 }
 
 .container {
