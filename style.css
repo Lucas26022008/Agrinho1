@@ -27,6 +27,10 @@ p {
     font-weight: bold;
 }
 
+.butao--entrar:hover{
+    top: -5em;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
