@@ -25,10 +25,17 @@ p {
     background-color: transparent;
     color: black;
     font-weight: bold;
+    position: relative;
 }
 
-.butao--entrar:hover{
-    top: -5em;
+.botao--.butao--entrar:hover {
+    animation: slideTop 0.3s forwards;
+}
+
+@keyframes slideTop {
+    to {
+        transform: translateY(-5em);
+    }
 }
 
 .container {
