@@ -5,3 +5,8 @@ body{
 #--cabecalho-vermelho{
     background-color: rgb(260, 70, 70);
 }
+
+.letras--meio{
+    text-align: center;
+    font-size: 30px;
+}
