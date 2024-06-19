@@ -53,3 +53,7 @@ body{
       }
     }
   }
+
+  .botao-no-meio{
+    align-items: center;
+}
