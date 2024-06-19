@@ -125,6 +125,7 @@ p {
     }
     &:hover {
       color: #96fd8a;
+      background-color: #000000;
       &:before {
         width: 100%;
       }
