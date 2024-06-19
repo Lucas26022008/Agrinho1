@@ -15,7 +15,7 @@ body{
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: .15rem;
@@ -47,7 +47,7 @@ body{
       z-index: -1;
     }
     &:hover {
-      color: #fff;
+      color: #ff9d9d;
       &:before {
         width: 100%;
       }
