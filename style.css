@@ -71,8 +71,45 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.caixa.active {
-    transform: translateY(10px);
+.popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    display: flex;
+}
+
+.popup-left, .popup-right {
+    padding: 20px;
+}
+
+.popup-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #dddddd;
+}
+
+.popup-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#popup-icon {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .imagem{
