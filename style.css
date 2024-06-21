@@ -53,7 +53,7 @@ p {
 
 .container {
     display: flex;
-    justify-content: space-arounda;
+    justify-content: space-around;
     gap: 20px;
     padding: 40px;
     flex-wrap: wrap;
