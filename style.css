@@ -9,6 +9,20 @@ body {
 
 header{
     background-color: #a9eca2;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+#logoreni{
+    height: 124px;
+    width: auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 h2 {
@@ -40,9 +54,10 @@ p {
 
 .container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
 .caixa {
@@ -56,29 +71,11 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.caixa--morango {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .caixa:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#logoreni{
-    height: 124px;
-    width: auto;
-    position: absolute;
-    right: 100px;
-}
 .imagem{
     height: 500px;
     width: auto;
@@ -87,7 +84,6 @@ p {
     margin: auto;
     margin-top: 50px;
 }
-
 
 .botao {
     display: inline-block;
@@ -137,6 +133,6 @@ p {
     width: 100%;
 }
 
-  .caixa p {
+.caixa p {
     display: none;
-  }
+}
