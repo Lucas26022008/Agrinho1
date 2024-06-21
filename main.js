@@ -15,18 +15,11 @@ barracas.forEach((barraca) => {
     popupInfo.innerHTML = info.replace(/,/g, '<br>');
 
     popup.style.display = 'flex';
-    setTimeout(() => {
-      popup.style.opacity = '1';
-    }, 10); // timeout to ensure transition effect
+    popup.style.opacity = '1'; // Adjust opacity here
   });
 
-  barraca.addEventListener('mouseout', (event) => {
-    if (!popup.contains(event.relatedTarget)) {
-      popup.style.opacity = '0';
-      setTimeout(() => {
-        popup.style.display = 'none';
-      }, 300); // match this with the CSS transition duration
-    }
+  barraca.addEventListener('mouseout', () => {
+    popup.style.display = 'none';
   });
 });
 
@@ -34,11 +27,6 @@ popup.addEventListener('mouseover', () => {
   popup.style.opacity = '1';
 });
 
-popup.addEventListener('mouseout', (event) => {
-  if (!popup.contains(event.relatedTarget)) {
-    popup.style.opacity = '0';
-    setTimeout(() => {
-      popup.style.display = 'none';
-    }, 300); // match this with the CSS transition duration
-  }
+popup.addEventListener('mouseout', () => {
+  popup.style.display = 'none';
 });
