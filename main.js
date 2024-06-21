@@ -15,7 +15,7 @@ barracas.forEach((barraca) => {
     popupInfo.innerHTML = info.replace(/,/g, '<br>');
 
     popup.style.display = 'flex';
-    popup.style.opacity = '1'; // Adjust opacity here
+    popup.style.opacity = '1'; 
   });
 
   barraca.addEventListener('mouseout', () => {
