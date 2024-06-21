@@ -31,4 +31,14 @@ barracas.forEach((barraca) => {
 });
 
 popup.addEventListener('mouseover', () => {
-  popup.style.opacity = '
+  popup.style.opacity = '1';
+});
+
+popup.addEventListener('mouseout', (event) => {
+  if (!popup.contains(event.relatedTarget)) {
+    popup.style.opacity = '0';
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 300); // match this with the CSS transition duration
+  }
+});
