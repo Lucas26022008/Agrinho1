@@ -20,10 +20,15 @@ barracas.forEach((barraca) => {
     }, 10); // timeout to ensure transition effect
   });
 
-  barraca.addEventListener('mouseout', () => {
-    popup.style.opacity = '0';
-    setTimeout(() => {
-      popup.style.display = 'none';
-    }, 300); // match this with the CSS transition duration
+  barraca.addEventListener('mouseout', (event) => {
+    if (!popup.contains(event.relatedTarget)) {
+      popup.style.opacity = '0';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 300); // match this with the CSS transition duration
+    }
   });
 });
+
+popup.addEventListener('mouseover', () => {
+  popup.style.opacity = '

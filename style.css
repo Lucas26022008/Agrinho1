@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-header{
+header {
     background-color: #a9eca2;
     padding: 20px;
     text-align: center;
@@ -17,7 +17,7 @@ header img {
     vertical-align: middle;
 }
 
-#logoreni{
+#logoreni {
     height: 124px;
     width: auto;
     position: absolute;
@@ -34,7 +34,7 @@ p {
     color: #666666;
 }
 
-.butao--entrar{
+.butao--entrar {
     font-family: "Nunito", sans-serif;
     background-color: transparent;
     color: black;
@@ -113,7 +113,7 @@ p {
     max-height: 100px;
 }
 
-.imagem{
+.imagem {
     height: 500px;
     width: auto;
     text-align: center;
