@@ -14,19 +14,22 @@ barracas.forEach((barraca) => {
     popupTitle.textContent = title;
     popupInfo.innerHTML = info.replace(/,/g, '<br>');
 
-    popup.style.display = 'flex';
-    popup.style.opacity = '1'; 
+    popup.classList.remove('hide');
+    popup.classList.add('show');
   });
 
   barraca.addEventListener('mouseout', () => {
-    popup.style.display = 'none';
+    popup.classList.remove('show');
+    popup.classList.add('hide');
   });
 });
 
 popup.addEventListener('mouseover', () => {
-  popup.style.opacity = '1';
+  popup.classList.remove('hide');
+  popup.classList.add('show');
 });
 
 popup.addEventListener('mouseout', () => {
-  popup.style.display = 'none';
+  popup.classList.remove('show');
+  popup.classList.add('hide');
 });
