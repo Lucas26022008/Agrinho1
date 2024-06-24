@@ -74,14 +74,14 @@
       align-items: center;
   }
 
-#morango--uva {
+#itens {
     display: flex;
     justify-content: space-around;
-    align-items: center; /* Alinha os itens no centro verticalmente */
-    flex-wrap: wrap; /* Permite que os itens se quebrem em várias linhas, se necessário */
-    padding: 20px; /* Adicione um pouco de padding para espaçamento */
-    background-color: #fff; /* Adicione um fundo branco para contraste */
-    border: 1px solid #ddd; /* Adicione uma borda leve */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
