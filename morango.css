@@ -74,7 +74,7 @@
       align-items: center;
   }
 
-#itens {
+.itens {
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -84,4 +84,10 @@
     border: 1px solid #ddd; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#caixas-doce{
+  text-align: center;
+  height: 200px;
+  width: auto;
 }
