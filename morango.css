@@ -93,5 +93,5 @@
   width: auto;
 }
 #imagem--ao--contrario{
-  transform: scaleY(-1);
+  transform: scaleX(-1);
 }
