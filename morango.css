@@ -87,16 +87,3 @@
   height: 200px;
   width: auto;
 }
-
-.icon--cabecalho{
-  height: 20px;
-  width: auto;
-}
-#imagem--ao--contrario{
-  transform: scaleX(-1);
-}
-
-#aa{
-  display: flex;
-  align-items: center;
-}
