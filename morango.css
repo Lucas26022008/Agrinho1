@@ -75,7 +75,11 @@
   }
 
 .itens {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 10px; 
 }
 
 #caixas-doce{
