@@ -74,6 +74,10 @@
       align-items: center;
   }
 
+.itens{
+  text-align: justify;
+}
+
 #caixas-doce{
   text-align: center;
   height: 200px;
