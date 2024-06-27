@@ -86,3 +86,8 @@ footer{
     background-color: #000000;
   }
 }
+
+.imagens--produtos{
+  height: 150;
+  width: auto;
+}
