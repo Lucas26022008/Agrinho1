@@ -61,6 +61,7 @@ mark {
     color: inherit;
 }
 
+/*
 footer{
     background-color: #333;
     color: #999;
@@ -97,39 +98,10 @@ footer{
       z-index: -2;
     }
     &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: darken($color, 15%);
-      transition: all .3s;
-      border-radius: 10rem;
-      z-index: -1;
-    }
-    &:hover {
-      color: #ffffff;
-      &:before {
-        width: 100%;
-      background-color: #000000;
-      }
-    }
-  }
-
-  .botao-no-meio{
-    margin: auto;
-    display: flex;
-}
-
-.itens{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    border: 1px solid #ccc;
-    padding: 10px; 
+…    padding: 10px; 
 }
 
 .texto--meio{
     text-align: center;
 }
+*/
