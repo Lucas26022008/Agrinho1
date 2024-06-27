@@ -118,7 +118,14 @@ footer{
   }
 
   .botao-no-meio{
+    margin: auto;
+    display: flex;
+}
+
+.itens{
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 10px; 
 }
