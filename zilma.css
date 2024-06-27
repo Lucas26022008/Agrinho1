@@ -52,6 +52,10 @@ footer{
     &:before {
 …    padding: 10px; 
     }
+    &:hover{
+        color: #ffff;
+        background-color: #000000;
+    }
 }
 
 .texto--meio{
