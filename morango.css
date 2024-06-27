@@ -39,6 +39,10 @@
   width: auto;
 }
 
+body{
+  text-align: center;
+}
+
 footer{
   background-color: #333;
   color: #999;
@@ -58,7 +62,6 @@ footer{
   color: #000000;
   text-transform: uppercase;
   font-size: 1rem;
-  text-align: center;
   letter-spacing: .15rem;
   transition: all .3s;
   position: relative;
