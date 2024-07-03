@@ -42,18 +42,7 @@
 body {
   text-align: center;
   margin: 0;
-  padding-bottom: 60px; /* Space for the fixed footer */
-}
-
-footer {
-  background-color: #333;
-  color: #999;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  padding-bottom: 60px;
 }
 
 .botao {
