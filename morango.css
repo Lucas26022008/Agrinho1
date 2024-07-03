@@ -112,3 +112,22 @@ footer{
   width: 300px;
   height: auto;
 }
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #999;
+}
+
+.footer-wrapper.itens {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #999;
+  padding: 20px;
+}
