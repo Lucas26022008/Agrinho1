@@ -90,4 +90,5 @@ footer{
 .imagens--produtos{
   height: 300px;
   width: 300px;
+  float: right;
 }
