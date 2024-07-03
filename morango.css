@@ -87,8 +87,28 @@ footer{
   }
 }
 
-.imagens--produtos{
-  height: 300px;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  flex-basis: 50%;
+  font-size: 25px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.image-container {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.image-container img {
   width: 300px;
-  float: right;
+  height: auto;
 }
