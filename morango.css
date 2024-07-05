@@ -92,12 +92,17 @@ body {
   height: auto;
 }
 
-.horta--imagem{
-  width: 300px;
-  height: auto;
-
+.caixa--horta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.caixa--horta{
-  display: center;
+.box-h {
+  text-align: center;
+}
+
+.horta--imagem {
+  max-width: 100%;
+  height: auto;
 }
