@@ -87,7 +87,7 @@ body {
   text-align: center;
 }
 
-.image-container img {
+.horta-h img {
   width: 300px;
   height: auto;
 }
@@ -105,4 +105,4 @@ body {
 .horta--imagem {
   max-width: 100%;
   height: auto;
-}
+  
