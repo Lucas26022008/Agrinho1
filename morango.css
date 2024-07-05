@@ -57,13 +57,13 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  transition: all 3s;
+  transition: all 1.5s;
 }
 
 .botao:hover {
   color: #ffffff;
   background-color: #000000;
-  transition: all 3s;
+  transition: all 1.5s;
 }
 
 .container {
