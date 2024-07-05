@@ -97,3 +97,7 @@ body {
   height: auto;
 
 }
+
+.caixa--horta{
+  display: flex;
+}
