@@ -222,3 +222,7 @@ footer{
 .icone-pastel{
     transform: translateY(-1);
 }
+
+footer a {
+    color: white;
+}
