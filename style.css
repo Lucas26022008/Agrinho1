@@ -220,7 +220,7 @@ footer{
 }
 
 .icone-pastel{
-    transform: translateY(-1);
+    transform: translateY(-1em);
 }
 
 footer a {
