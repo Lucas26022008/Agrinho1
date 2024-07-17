@@ -17,6 +17,8 @@
 }
 
 #--cabecalho-vermelho {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: rgb(260, 70, 70);
 }
 
@@ -105,4 +107,4 @@ body {
 .horta--imagem {
   max-width: 100%;
   height: auto;
-  
+}
