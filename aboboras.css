@@ -1,0 +1,91 @@
+h1{
+    font-size: 40px;
+  }
+  
+  .cabecalho{
+      background-color: #9ccf63;
+      padding-top: 25px;
+      padding-bottom: 25px;
+  }
+  
+  body{
+      text-align: center;
+  }
+  
+  footer{
+      background-color: #333;
+      color: #999;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+  }
+  
+  .itens {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border: 1px solid #ccc;
+      padding: 10px; 
+  }
+  
+  .botao {
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      border-radius: 10rem;
+      color: #000000;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .15rem;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+      &:before {
+        padding: 10px; 
+      }
+      &:hover{
+        color: #ffff;
+        background-color: #000000;
+      }
+    }
+  
+  .texto--meio{
+      text-align: center;
+      font-size: 40px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-container {
+    flex-basis: 50%;
+    font-size: 26px;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  .image-container {
+    flex-basis: 50%;
+    text-align: center;
+  }
