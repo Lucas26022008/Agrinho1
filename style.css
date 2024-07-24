@@ -223,3 +223,16 @@ footer a {
         transform: translateY(-5em);
     }
 }
+
+.caixa {
+    /* Outros estilos existentes */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.caixa .butao--entrar {
+    margin-top: 10px; /* Espaçamento opcional entre o texto e o botão */
+}
+
+.caixa .butao--entrar {
+    margin-top: 0; /* Remove a margem superior */
+}
