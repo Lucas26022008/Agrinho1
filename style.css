@@ -184,10 +184,6 @@ footer a {
     color: white;
 }
 
-.caixa .butao--entrar {
-    margin-top: 10px;
-}
-
 /* Estilos específicos para tamanhos de tela */
 @media only screen and (min-width: 1024px) {
     body {
