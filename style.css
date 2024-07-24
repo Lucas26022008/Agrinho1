@@ -102,6 +102,7 @@ strong {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 /* Estilos de popup */
@@ -183,6 +184,10 @@ footer a {
     color: white;
 }
 
+.caixa .butao--entrar {
+    margin-top: 10px;
+}
+
 /* Estilos específicos para tamanhos de tela */
 @media only screen and (min-width: 1024px) {
     body {
@@ -222,17 +227,4 @@ footer a {
     to {
         transform: translateY(-5em);
     }
-}
-
-.caixa {
-    /* Outros estilos existentes */
-    text-align: center; /* Centraliza o conteúdo */
-}
-
-.caixa .butao--entrar {
-    margin-top: 10px; /* Espaçamento opcional entre o texto e o botão */
-}
-
-.caixa .butao--entrar {
-    margin-top: 0; /* Remove a margem superior */
 }
