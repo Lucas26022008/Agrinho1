@@ -1,27 +1,27 @@
+body{
+    text-align: center;
+}
+
 h1{
   font-size: 40px;
+}
+
+footer{
+  background-color: #333;
+  color: #999;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0px;
 }
 
 .cabecalho{
     background-color: #9ccf63;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-body{
-    text-align: center;
-}
-
-footer{
-    background-color: #333;
-    color: #999;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
 }
 
 .itens {
@@ -33,6 +33,7 @@ footer{
 }
 
 .botao {
+    margin: 20px 0; 
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
@@ -88,4 +89,12 @@ footer{
 .image-container {
   flex-basis: 50%;
   text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
 }

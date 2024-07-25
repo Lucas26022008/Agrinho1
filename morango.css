@@ -1,31 +1,36 @@
-::-webkit-scrollbar-track {
-  margin-right: 12px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  background-color: #ffffff;
-}
+body {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 60px;
+}  
 
-::-webkit-scrollbar {
-  width: 12px; 
-  background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  background-color: #D6E3FF;
+footer {
+  background-color: #333;
+  color: #999;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 #--cabecalho-vermelho {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: rgb(260, 70, 70);
-}
+}    
+
+#caixas-doce {
+  text-align: center;
+  height: 200px;
+  width: auto;
+}    
 
 .letras--meio {
   text-align: center;
   font-size: 40px;
-}
+}      
 
 .itens {
   display: flex;
@@ -33,19 +38,7 @@
   gap: 20px;
   border: 1px solid #ccc;
   padding: 10px; 
-}
-
-#caixas-doce {
-  text-align: center;
-  height: 200px;
-  width: auto;
-}
-
-body {
-  text-align: center;
-  margin: 0;
-  padding-bottom: 60px;
-}
+}      
 
 .botao {
   margin: 20px 0;
@@ -60,7 +53,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
-}
+}  
 
 .botao:after {
   content: '';
@@ -72,16 +65,16 @@ body {
   background-color: $color;
   border-radius: 10rem;
   z-index: -2;
-}
+}  
 
 .botao:before {
   padding: 10px;
-}
+}  
 
 .botao:hover {
   color: #ffff;
   background-color: #000000;
-}
+}  
 
 .container {
   display: flex;
@@ -90,31 +83,19 @@ body {
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+}  
 
 .text-container {
   flex-basis: 50%;
   font-size: 26px;
   margin-right: 20px;
   font-weight: bold;
-}
+}  
 
 .image-container {
   flex-basis: 50%;
   text-align: center;
-}
-
-footer {
-  background-color: #333;
-  color: #999;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-}
+}  
 
 .caixa--horta {
   max-width: 1200px;
