@@ -48,6 +48,7 @@ body {
 }
 
 .botao {
+  margin: 20px 0;
   display: inline-block;
   padding: 1rem 1.75rem;
   border-radius: 10rem;
@@ -55,7 +56,7 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: .15rem;
-  transition: all .3s;
+  transition: all .1s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -109,12 +110,12 @@ body {
   height: auto;
 }
 
-footer{
+footer {
   background-color: #333;
   color: #999;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -155,4 +156,17 @@ footer{
 .box-h h2 {
   color: #666666;
   margin-top: 10px;
+}
+
+.image-container {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
 }
