@@ -228,7 +228,7 @@ footer {
         width: auto;
         position: absolute;
         right: 0px;
-        top: 0px;
+        margin-bottom: 0;
     }
 }
 
