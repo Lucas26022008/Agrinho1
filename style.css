@@ -179,15 +179,11 @@ footer {
     color: #999;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     margin-bottom: 0%;
-}
-
-footer a {
-    color: white;
 }
 
 /* Estilos para computador */
@@ -218,7 +214,7 @@ footer a {
     }
 
     footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
