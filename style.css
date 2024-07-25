@@ -226,9 +226,8 @@ footer {
     #logoreni {
         height: 150px;
         width: auto;
-        position: absolute;
+        position: relative;
         align-items: center;
-        margin-bottom: 0;
     }
 }
 
