@@ -174,22 +174,27 @@ strong {
     margin-top: 50px;
 }
 
+footer {
+    background-color: #333;
+    color: #999;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+footer a {
+    color: white;
+}
+
 /* Estilos para computador */
 @media only screen and (min-width: 1024px) {
 
     header img {
         vertical-align: middle;
-    }
-
-    footer {
-        background-color: #333;
-        color: #999;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-        bottom: 0;
-        left: 0;
-        width: 100%;
     }
 
     #logoreni {
@@ -213,22 +218,14 @@ strong {
     }
 
     footer {
-        position: relative;
+        position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    
-    #logoreni {
-        height: 150px;
-        width: auto;
-        display: block;
-        margin: 0 auto;
-    }
-}
+
 
 @keyframes slideTop {
     to {
