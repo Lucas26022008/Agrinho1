@@ -174,22 +174,22 @@ strong {
     margin-top: 50px;
 }
 
-footer {
-    background-color: #333;
-    color: #999;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
 /* Estilos para computador */
 @media only screen and (min-width: 1024px) {
 
     header img {
         vertical-align: middle;
+    }
+
+    footer {
+        background-color: #333;
+        color: #999;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 
     #logoreni {
