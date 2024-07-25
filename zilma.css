@@ -86,10 +86,3 @@ footer{
   flex-basis: 50%;
   text-align: center;
 }
-
-.teste1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
