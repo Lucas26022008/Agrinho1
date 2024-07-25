@@ -224,7 +224,7 @@ footer {
 @media only screen and (max-width: 767px) {
 
     #logoreni {
-        height: 10px;
+        height: 150bpx;
         width: auto;
         position: absolute;
         right: 20px;
