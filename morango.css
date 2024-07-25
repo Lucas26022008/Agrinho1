@@ -50,23 +50,37 @@ body {
 .botao {
   margin: 20px 0;
   display: inline-block;
-  padding: 1rem 1.75rem;
+  padding: .75rem 1.25rem;
   border-radius: 10rem;
   color: #000000;
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: .15rem;
-  transition: all .1s;
+  transition: all .3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  transition: all 1.5s;
+}
+
+.botao:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.botao:before {
+  padding: 10px;
 }
 
 .botao:hover {
-  color: #ffffff;
+  color: #ffff;
   background-color: #000000;
-  transition: all 1.5s;
 }
 
 .container {
@@ -90,26 +104,6 @@ body {
   text-align: center;
 }
 
-.horta-h img {
-  width: 300px;
-  height: auto;
-}
-
-.caixa--horta {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.box-h {
-  text-align: center;
-}
-
-.horta--imagem {
-  max-width: 100%;
-  height: auto;
-}
-
 footer {
   background-color: #333;
   color: #999;
@@ -121,6 +115,7 @@ footer {
   width: 100%;
   height: 50px;
 }
+
 .caixa--horta {
   max-width: 1200px;
   margin: 0 auto;
@@ -131,7 +126,7 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.caixa--horta h1 {
+.horta--titulo {
   color: #333333;
   margin-bottom: 30px;
 }
@@ -144,7 +139,7 @@ footer {
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  align-items: center;
+  text-align: center;
 }
 
 .imagem--produto {
@@ -153,7 +148,7 @@ footer {
   border-radius: 8px;
 }
 
-.box-h h2 {
+.horta--produto-nome {
   color: #666666;
   margin-top: 10px;
 }
@@ -169,4 +164,8 @@ footer {
   width: 500px;
   display: block;
   margin: 0 auto;
+}
+
+.separacao{
+  margin-top: 40px;
 }
