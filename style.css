@@ -225,6 +225,14 @@ footer {
     body{
         background-color: #000000;
     }
+
+    #logoreni{
+        height: 100px;
+        width: auto;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
 }
 
 @keyframes slideTop {
