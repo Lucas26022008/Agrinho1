@@ -222,12 +222,12 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-
+    
     #logoreni {
         height: 150px;
         width: auto;
-        position: relative;
-        align-items: center;
+        display: block;
+        margin: 0 auto;
     }
 }
 
