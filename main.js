@@ -13,7 +13,7 @@ barracas.forEach((barraca) => {
     const toggleBtn = barraca.querySelector('.toggle-btn');
 
     barraca.addEventListener('mouseover', () => {
-        if (isMobileOrTablet()) return; // Não mostra o popup em dispositivos móveis e tablets
+        if (isMobileOrTablet()) return;
 
         const icon = barraca.getAttribute('data-icon');
         const title = barraca.getAttribute('data-title');
@@ -28,8 +28,7 @@ barracas.forEach((barraca) => {
     });
 
     barraca.addEventListener('mouseout', () => {
-        if (isMobileOrTablet()) return; // Não esconde o popup em dispositivos móveis e tablets
-
+        if (isMobileOrTablet()) return;
         popup.classList.remove('show');
         popup.classList.add('hide');
     });
@@ -46,15 +45,14 @@ barracas.forEach((barraca) => {
 });
 
 popup.addEventListener('mouseover', () => {
-    if (isMobileOrTablet()) return; // Não mostra o popup em dispositivos móveis e tablets
+    if (isMobileOrTablet()) return;
 
     popup.classList.remove('hide');
     popup.classList.add('show');
 });
 
 popup.addEventListener('mouseout', () => {
-    if (isMobileOrTablet()) return; // Não esconde o popup em dispositivos móveis e tablets
-
+    if (isMobileOrTablet()) return;
     popup.classList.remove('show');
     popup.classList.add('hide');
 });

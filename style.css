@@ -209,6 +209,8 @@ footer a {
   .botao-produtos button:hover {
     background: #fff;
     color: #1AAB8A;
+    height: auto;
+    width: 50px;
   }
   
   .botao-produtos button:before,
@@ -288,7 +290,7 @@ footer a {
         display: inline-block;
     }
 }
-
+/* Estilo para celular */
 @media only screen and (max-width: 767px) {
     #logoreni {
         height: 150px;
