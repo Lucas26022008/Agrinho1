@@ -4,45 +4,57 @@ const popupIcon = document.getElementById('popup-icon');
 const popupTitle = document.getElementById('popup-title');
 const popupInfo = document.getElementById('popup-info');
 
+function isMobileOrTablet() {
+    return window.innerWidth <= 1023;
+}
+
 barracas.forEach((barraca) => {
-  const produtos = barraca.querySelector('.produtos');
-  const toggleBtn = barraca.querySelector('.toggle-btn');
+    const produtos = barraca.querySelector('.produtos');
+    const toggleBtn = barraca.querySelector('.toggle-btn');
 
-  barraca.addEventListener('mouseover', () => {
-    const icon = barraca.getAttribute('data-icon');
-    const title = barraca.getAttribute('data-title');
-    const info = barraca.getAttribute('data-info');
+    barraca.addEventListener('mouseover', () => {
+        if (isMobileOrTablet()) return; // Não mostra o popup em dispositivos móveis e tablets
 
-    popupIcon.src = icon;
-    popupTitle.textContent = title;
-    popupInfo.innerHTML = info.replace(/,/g, '<br>');
+        const icon = barraca.getAttribute('data-icon');
+        const title = barraca.getAttribute('data-title');
+        const info = barraca.getAttribute('data-info');
 
-    popup.classList.remove('hide');
-    popup.classList.add('show');
-  });
+        popupIcon.src = icon;
+        popupTitle.textContent = title;
+        popupInfo.innerHTML = info.replace(/,/g, '<br>');
 
-  barraca.addEventListener('mouseout', () => {
-    popup.classList.remove('show');
-    popup.classList.add('hide');
-  });
+        popup.classList.remove('hide');
+        popup.classList.add('show');
+    });
 
-  toggleBtn.addEventListener('click', () => {
-    if (produtos.style.display === 'none' || produtos.style.display === '') {
-      produtos.style.display = 'block';
-      toggleBtn.textContent = 'Esconder Produtos';
-    } else {
-      produtos.style.display = 'none';
-      toggleBtn.textContent = 'Mostrar Produtos';
-    }
-  });
+    barraca.addEventListener('mouseout', () => {
+        if (isMobileOrTablet()) return; // Não esconde o popup em dispositivos móveis e tablets
+
+        popup.classList.remove('show');
+        popup.classList.add('hide');
+    });
+
+    toggleBtn.addEventListener('click', () => {
+        if (produtos.style.display === 'none' || produtos.style.display === '') {
+            produtos.style.display = 'block';
+            toggleBtn.textContent = 'Esconder Produtos';
+        } else {
+            produtos.style.display = 'none';
+            toggleBtn.textContent = 'Mostrar Produtos';
+        }
+    });
 });
 
 popup.addEventListener('mouseover', () => {
-  popup.classList.remove('hide');
-  popup.classList.add('show');
+    if (isMobileOrTablet()) return; // Não mostra o popup em dispositivos móveis e tablets
+
+    popup.classList.remove('hide');
+    popup.classList.add('show');
 });
 
 popup.addEventListener('mouseout', () => {
-  popup.classList.remove('show');
-  popup.classList.add('hide');
+    if (isMobileOrTablet()) return; // Não esconde o popup em dispositivos móveis e tablets
+
+    popup.classList.remove('show');
+    popup.classList.add('hide');
 });
