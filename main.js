@@ -5,6 +5,9 @@ const popupTitle = document.getElementById('popup-title');
 const popupInfo = document.getElementById('popup-info');
 
 barracas.forEach((barraca) => {
+  const produtos = barraca.querySelector('.produtos');
+  const toggleBtn = barraca.querySelector('.toggle-btn');
+
   barraca.addEventListener('mouseover', () => {
     const icon = barraca.getAttribute('data-icon');
     const title = barraca.getAttribute('data-title');
@@ -21,6 +24,16 @@ barracas.forEach((barraca) => {
   barraca.addEventListener('mouseout', () => {
     popup.classList.remove('show');
     popup.classList.add('hide');
+  });
+
+  toggleBtn.addEventListener('click', () => {
+    if (produtos.style.display === 'none' || produtos.style.display === '') {
+      produtos.style.display = 'block';
+      toggleBtn.textContent = 'Esconder Produtos';
+    } else {
+      produtos.style.display = 'none';
+      toggleBtn.textContent = 'Mostrar Produtos';
+    }
   });
 });
 
