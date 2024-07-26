@@ -192,37 +192,24 @@ footer {
 footer a {
     color: white;
 }
-
 .botao-produtos button {
     background: #1AAB8A;
     color: #fff;
     border: none;
     position: relative;
-    height: 60px;
-    font-size: 1.6em;
-    padding: 0 2em;
+    height: 40px; /* Ajustado para um tamanho menor */
+    font-size: 1.2em; /* Fonte reduzida */
+    padding: 0 1em; /* Menos padding para reduzir o tamanho */
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;
-  }
-  .botao-produtos button {
-    background: #1AAB8A;
-    color: #fff;
-    border: none;
-    position: relative;
-    height: 60px;
-    font-size: 1.6em;
-    padding: 0 2em;
-    cursor: pointer;
-    transition: 800ms ease all;
-    outline: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Ajuste conforme necessário */
 }
 
 .botao-produtos button:hover {
     background: #fff;
     color: #1AAB8A;
-    height: auto;
+    height: 40px; 
 }
 
 .botao-produtos button:before,
@@ -262,8 +249,6 @@ footer a {
     left: inherit;
     bottom: 0;
 }
-
-
   
 /* Estilos para computador */
 @media only screen and (min-width: 1024px) {
