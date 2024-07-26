@@ -197,13 +197,13 @@ footer a {
     color: #fff;
     border: none;
     position: relative;
-    height: 50px; /* Ajustado para um tamanho menor */
-    font-size: 1.2em; /* Fonte reduzida */
-    padding: 0 1em; /* Menos padding para reduzir o tamanho */
+    height: 50px; 
+    font-size: 1.2em;
+    padding: 0 1em; 
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;
-    border-radius: 5px; /* Ajuste conforme necessário */
+    border-radius: 5px; 
 }
 
 .botao-produtos button:hover {
