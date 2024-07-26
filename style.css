@@ -280,6 +280,10 @@ footer a {
         margin-top: 20px;
     }
 
+    .popup {
+        display: none !important;
+    }
+
     .toggle-btn {
         display: inline-block;
     }
@@ -293,6 +297,10 @@ footer a {
         display: block;
         margin: auto;
         margin-top: 20px;
+    }    
+    
+    .popup {
+        display: none !important;
     }
 
     .toggle-btn {
