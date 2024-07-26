@@ -197,7 +197,7 @@ footer a {
     color: #fff;
     border: none;
     position: relative;
-    height: 40px; /* Ajustado para um tamanho menor */
+    height: 50px; /* Ajustado para um tamanho menor */
     font-size: 1.2em; /* Fonte reduzida */
     padding: 0 1em; /* Menos padding para reduzir o tamanho */
     cursor: pointer;
@@ -209,7 +209,7 @@ footer a {
 .botao-produtos button:hover {
     background: #fff;
     color: #1AAB8A;
-    height: 40px; 
+    height: 50px; 
 }
 
 .botao-produtos button:before,
