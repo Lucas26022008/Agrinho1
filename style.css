@@ -205,16 +205,28 @@ footer a {
     transition: 800ms ease all;
     outline: none;
   }
-  
-  .botao-produtos button:hover {
+  .botao-produtos button {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 5px;
+}
+
+.botao-produtos button:hover {
     background: #fff;
     color: #1AAB8A;
     height: auto;
-    width: 50px;
-  }
-  
-  .botao-produtos button:before,
-  .botao-produtos button:after {
+}
+
+.botao-produtos button:before,
+.botao-produtos button:after {
     content: '';
     position: absolute;
     top: 0;
@@ -223,20 +235,34 @@ footer a {
     width: 0;
     background: #1AAB8A;
     transition: 400ms ease all;
-  }
-  
-  .botao-produtos button:after {
+}
+
+.botao-produtos button:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
-  }
-  
-  .botao-produtos button:hover:before,
-  .botao-produtos button:hover:after {
+}
+
+.botao-produtos button:hover:before,
+.botao-produtos button:hover:after {
     width: 100%;
     transition: 800ms ease all;
-  }
+}
+
+.botao-produtos button:before {
+    top: 0;
+    left: 0;
+    width: 0;
+    bottom: 0;
+}
+
+.botao-produtos button:after {
+    right: 0;
+    left: inherit;
+    bottom: 0;
+}
+
 
   
 /* Estilos para computador */
