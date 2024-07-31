@@ -93,6 +93,11 @@ strong {
     transform: translateY(-1em);
 }
 
+.informacao p{
+    color: #000000;
+    /* text-align: left; */
+}
+
 .container {
     display: flex;
     justify-content: space-around;
