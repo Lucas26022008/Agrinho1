@@ -98,6 +98,10 @@ strong {
     text-align: center;
 }
 
+.informacao h1 {
+    margin-bottom: 20px; /* Ajuste a margem conforme necessário */
+}
+
 .container {
     display: flex;
     justify-content: space-around;
