@@ -96,7 +96,7 @@ strong {
 }
 .informacao {
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .informacao h1,
@@ -108,7 +108,7 @@ strong {
 }
 
 .informacao h1 {
-    margin-bottom: 1em; /* Adiciona um espaço entre o <h1> e o <p> */
+    margin-bottom: 1em;
 }
 
 .informacao p {
