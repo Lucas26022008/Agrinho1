@@ -357,4 +357,14 @@ footer a {
     .toggle-btn {
         display: inline-block;
     }
+
+    .container-info{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .container{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
 }
