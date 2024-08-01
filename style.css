@@ -94,14 +94,26 @@ strong {
 .icone-pastel {
     transform: translateY(-1em);
 }
-
-.informacao p{
-    color: #000000;
+.informacao {
+    width: 100%;
     text-align: center;
 }
 
+.informacao h1,
+.informacao p {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .informacao h1 {
-    margin-bottom: 20px; /* Ajuste a margem conforme necessário */
+    margin-bottom: 1em; /* Adiciona um espaço entre o <h1> e o <p> */
+}
+
+.informacao p {
+    margin-top: 1em;
+    color: #000000;
 }
 
 .container {
