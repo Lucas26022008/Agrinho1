@@ -79,7 +79,7 @@ strong {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #333333; 
+    background-color: #333333;
     transition: all .3s;
     border-radius: 10rem;
     z-index: -1;
@@ -97,6 +97,7 @@ strong {
 .icone-pastel {
     transform: translateY(-1em);
 }
+
 .informacao {
     width: 100%;
     text-align: left;
@@ -112,7 +113,7 @@ strong {
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1.5;
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
 }
 
 .informacao h1 {
@@ -181,7 +182,8 @@ strong {
     transform: translateX(-50%) translateY(-20px);
 }
 
-.popup-left, .popup-right {
+.popup-left,
+.popup-right {
     padding: 20px;
 }
 
@@ -219,19 +221,19 @@ strong {
     color: #fff;
     border: none;
     position: relative;
-    height: 50px; 
+    height: 50px;
     font-size: 1.2em;
-    padding: 0 1em; 
+    padding: 0 1em;
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .botao-produtos button:hover {
     background: #fff;
     color: #1AAB8A;
-    height: 50px; 
+    height: 50px;
 }
 
 .botao-produtos button:before,
@@ -283,7 +285,7 @@ strong {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
-    padding: 3em  ;
+    padding: 3em;
     text-align: left;
     flex-direction: column;
     width: 85%;
@@ -291,7 +293,7 @@ strong {
 
 
 .botao-cadastro {
-    width: 20%; 
+    width: 20%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -301,37 +303,47 @@ strong {
     cursor: pointer;
     margin: auto;
     display: block;
-  }
-  
-  .botao-cadastro:hover {
-    background-color: #6B8E23  ;
-  }
+}
 
-  input, select {
+.botao-cadastro:hover {
+    background-color: #6B8E23;
+}
+
+input,
+select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     /*display: inline-block;*/
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: Helvetica;
     font-size: 14px;
-  }
+}
 
-  .formulario{
+.formulario {
     width: 80%;
     margin: auto;
-  }
+}
 
-  ol{
+ol {
     margin-left: 1em;
-  }
+}
 
-.container-info  h3{
+.container-info h3 {
     margin-top: 1em;
     margin-bottom: 0.5em;
-  }
+}
+
+.imagens--inverno--gastronomico img {
+    height: auto;
+    width: 25%;
+}
+
+
+
+
 /* Estilos para computador */
 @media only screen and (min-width: 1024px) {
 
@@ -366,7 +378,7 @@ strong {
 
 /* Estilo para Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #logoreni{
+    #logoreni {
         height: 300px;
         width: auto;
         text-align: center;
@@ -383,6 +395,7 @@ strong {
         display: inline-block;
     }
 }
+
 /* Estilo para celular */
 @media only screen and (max-width: 767px) {
     #logoreni {
@@ -392,8 +405,8 @@ strong {
         display: block;
         margin: auto;
         margin-top: 20px;
-    }    
-    
+    }
+
     .popup {
         display: none !important;
     }
@@ -402,14 +415,14 @@ strong {
         display: inline-block;
     }
 
-    .container-info{
+    .container-info {
         padding: 0 35px 0 35px;
         width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .caixa{
+    .caixa {
         margin-top: 25px;
         margin-bottom: 10px;
     }
