@@ -1,7 +1,9 @@
+
 body {
   text-align: center;
   margin: 0;
   padding-bottom: 60px;
+  background-color: #f0f0f0;
 }  
 
 footer {
@@ -40,20 +42,34 @@ footer {
   padding: 10px; 
 }      
 
+.botao-entrar {
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+
+.botao--.botao-entrar:hover {
+  animation: slideTop 0.3s forwards;
+}
+
 .botao {
-  margin: 20px 0;
   display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
   color: #000000;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: .15rem;
   transition: all .3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-}  
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+  width: 150px;
+}
 
 .botao:after {
   content: '';
@@ -62,19 +78,32 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $color;
+  background-color: #ffffff;
   border-radius: 10rem;
   z-index: -2;
-}  
+}
 
 .botao:before {
-  padding: 10px;
-}  
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #333333; 
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
 
 .botao:hover {
-  color: #ffff;
+  color: #96fd8a;
   background-color: #000000;
-}  
+}
+
+.botao:hover:before {
+  width: 100%;
+}
 
 .container {
   display: flex;
@@ -83,19 +112,25 @@ footer {
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+  border-radius: 1em;
+  margin-bottom: 1em;  margin-top: 1em;
 }  
 
 .text-container {
   flex-basis: 50%;
-  font-size: 26px;
+  font-size: 20px;
   margin-right: 20px;
   font-weight: bold;
 }  
-
+/* 
 .image-container {
   flex-basis: 50%;
   text-align: center;
-}  
+  border-radius: 1em;
+  width: 60%;
+}   */
 
 .caixa--horta {
   max-width: 1200px;
@@ -124,9 +159,8 @@ footer {
 }
 
 .imagem--produto {
-  width: 100%;
+  width: 80%;
   height: auto;
-  border-radius: 8px;
 }
 
 .horta--produto-nome {
@@ -140,10 +174,11 @@ footer {
 }
 
 .image-container img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
-  width: 500px;
+  width: 400px;
   display: block;
+  border-radius: 1em;
   margin: 0 auto;
 }
 
