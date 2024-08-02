@@ -1,37 +1,37 @@
-h1{
-    font-size: 40px;
-  }
-  
-  .cabecalho{
-      background-color: #9ccf63;
-      padding-top: 25px;
-      padding-bottom: 25px;
-  }
-  
-  body{
-      text-align: center;
-  }
-  
-  footer{
-      background-color: #333;
-      color: #999;
-      text-align: center;
-      padding: 10px;
-      position: relative;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50px;
-  }
-  
-  .itens {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      border: 1px solid #ccc;
-      padding: 10px; 
-  }
-  
+h1 {
+  font-size: 40px;
+}
+
+.cabecalho {
+  background-color: #9ccf63;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+body {
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #999;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.itens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
 .botao-entrar {
   font-family: "Nunito", sans-serif;
   background-color: transparent;
@@ -80,7 +80,7 @@ h1{
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #333333; 
+  background-color: #333333;
   transition: all .3s;
   border-radius: 10rem;
   z-index: -1;
@@ -94,37 +94,43 @@ h1{
 .botao:hover:before {
   width: 100%;
 }
-  
-  .texto--meio{
-      text-align: center;
-      font-size: 40px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .text-container {
-    flex-basis: 50%;
-    font-size: 26px;
-    margin-right: 20px;
-    font-weight: bold;
-  }
-  
-  .image-container {
-    flex-basis: 50%;
-    text-align: center;
-  }
-  
+
+.texto--meio {
+  text-align: center;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.text-container {
+  flex-basis: 50%;
+  font-size: 26px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.image-container {
+  flex-basis: 50%;
+  text-align: center;
+}
+
 .image-container img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
-  width: 500px;
+  width: 400px;
   display: block;
+  border-radius: 1em;
   margin: 0 auto;
 }
