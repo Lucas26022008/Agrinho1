@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -336,12 +335,34 @@ ol {
     margin-bottom: 0.5em;
 }
 
-.imagens--inverno--gastronomico img {
-    height: auto;
-    width: 25%;
+
+.container-inverno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
 }
-
-
+.imagens--inverno--gastronomico {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.imagens--inverno--gastronomico img {
+    width: 100%;
+    max-width: 200px; /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+}
+.texto {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+}
+.lado-direito {
+    align-items: flex-end;
+}
 
 
 /* Estilos para computador */
