@@ -4,11 +4,13 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    font-family: "Nunito", sans-serif;
 }
 
 header {
     background-color: #d3e5b8;
     padding: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -31,8 +33,6 @@ strong {
     color: #d1d1d1;
 }
 
-
-/*BOTOES*/
 .botao-entrar {
     font-family: "Nunito", sans-serif;
     background-color: transparent;
@@ -127,7 +127,7 @@ strong {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
@@ -146,6 +146,7 @@ strong {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
 }
 
 .caixa .produtos {
@@ -287,12 +288,11 @@ strong {
     padding: 3em;
     text-align: left;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
 }
 
-
 .botao-cadastro {
-    width: 20%;
+    width: 50%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -335,7 +335,6 @@ ol {
     margin-bottom: 0.5em;
 }
 
-
 .container-inverno {
     display: flex;
     justify-content: space-between;
@@ -343,108 +342,176 @@ ol {
     height: 100vh;
     padding: 20px;
 }
+
 .imagens--inverno--gastronomico {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
 }
+
 .imagens--inverno--gastronomico img {
-    width: 100%;
-    max-width: 200px; /* Ajuste conforme necessário */
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto--inverno--gastronomico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.texto--inverno--gastronomico h2,
+.texto--inverno--gastronomico p {
+    margin-bottom: 1em;
+}
+
+.informacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    text-align: left;
     margin-bottom: 20px;
 }
-.texto {
+
+.imagem {
+    display: block;
+    margin: auto;
+}
+
+.informacao p {
+    margin-top: 10px;
+}
+
+.botao-produtos button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+.produtos--titulo--principal {
     text-align: center;
-    width: 50%;
-    font-size: 1.5em;
-    font-family: "Poppins", sans-serif;
-}
-.lado-direito {
-    align-items: flex-end;
 }
 
-
-/* Estilos para computador */
-@media only screen and (min-width: 1024px) {
-
-    header img {
-        vertical-align: middle;
-    }
-
-    footer {
-        /* position: absolute; */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: #999;
-        text-align: center;
-        padding: 10px;
-    }
-
-    #logoreni {
-        height: 150px;
-        width: auto;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-
-    .toggle-btn {
-        display: none;
-    }
-
+.produtos--titulo--principal h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-top: 1em;
+    font-weight: bold;
 }
 
-/* Estilo para Tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #logoreni {
-        height: 300px;
-        width: auto;
-        text-align: center;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-    }
-
-    .popup {
-        display: none !important;
-    }
-
-    .toggle-btn {
-        display: inline-block;
-    }
+.produtos--titulo--principal p {
+    font-size: 1.2em;
+    color: #666666;
+    margin-top: 0.5em;
 }
 
-/* Estilo para celular */
-@media only screen and (max-width: 767px) {
-    #logoreni {
-        height: 150px;
-        width: auto;
-        text-align: center;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-    }
-
-    .popup {
-        display: none !important;
-    }
-
-    .toggle-btn {
-        display: inline-block;
-    }
-
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
     .container-info {
-        padding: 0 35px 0 35px;
-        width: 350px;
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: column;
+        width: 95%;
+        padding: 2em;
+    }
+
+    .popup {
+        width: 95%;
+    }
+
+    .texto--inverno--gastronomico {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .texto--inverno--gastronomico h2 {
+        font-size: 1.5em;
+    }
+
+    .texto--inverno--gastronomico p {
+        font-size: 1em;
+    }
+
+    .imagens--inverno--gastronomico img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .caixa {
-        margin-top: 25px;
-        margin-bottom: 10px;
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .informacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .informacao h1 {
+        font-size: 1.5em;
+    }
+
+    .informacao p {
+        font-size: 1em;
+    }
+
+    .popup-left,
+    .popup-right {
+        padding: 10px;
+    }
+
+    .popup-left {
+        border-right: none;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .imagem {
+        height: auto;
+        width: 100%;
+    }
+
+    .botao-cadastro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .informacao h1 {
+        font-size: 1.2em;
+    }
+
+    .informacao p {
+        font-size: 0.9em;
+    }
+
+    .container-info {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .botao-cadastro {
+        width: 100%;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
