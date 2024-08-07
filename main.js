@@ -1,58 +1,39 @@
-const barracas = document.querySelectorAll('.caixa');
-const popup = document.querySelector('.popup');
-const popupIcon = document.getElementById('popup-icon');
-const popupTitle = document.getElementById('popup-title');
-const popupInfo = document.getElementById('popup-info');
+document.addEventListener('DOMContentLoaded', function () {
+    const caixas = document.querySelectorAll('.caixa');
 
-function isMobileOrTablet() {
-    return window.innerWidth <= 1023;
+    caixas.forEach(caixa => {
+        caixa.addEventListener('click', function () {
+            const icon = this.getAttribute('data-icon');
+            const title = this.getAttribute('data-title');
+            const info = this.getAttribute('data-info');
+
+            document.getElementById('popup-icon').src = icon;
+            document.getElementById('popup-title').textContent = title;
+            document.getElementById('popup-info').textContent = info;
+
+            document.querySelector('.popup').classList.add('active');
+        });
+    });
+
+    document.querySelector('.popup').addEventListener('click', function () {
+        this.classList.remove('active');
+    });
+});
+
+function validarIdade() {
+    const birthdate = new Date(document.getElementById('birthdate').value);
+    const hoje = new Date();
+    let idade = hoje.getFullYear() - birthdate.getFullYear();
+    const m = hoje.getMonth() - birthdate.getMonth();
+
+    if (m < 0 || (m === 0 && hoje.getDate() < birthdate.getDate())) {
+        idade--;
+    }
+
+    if (idade < 18) {
+        alert('Você deve ter pelo menos 18 anos para se cadastrar.');
+        return false;
+    }
+
+    return true;
 }
-
-barracas.forEach((barraca) => {
-    const produtos = barraca.querySelector('.produtos');
-    const toggleBtn = barraca.querySelector('.toggle-btn');
-
-    barraca.addEventListener('mouseover', () => {
-        if (isMobileOrTablet()) return;
-
-        const icon = barraca.getAttribute('data-icon');
-        const title = barraca.getAttribute('data-title');
-        const info = barraca.getAttribute('data-info');
-
-        popupIcon.src = icon;
-        popupTitle.textContent = title;
-        popupInfo.innerHTML = info.replace(/,/g, '<br>');
-
-        popup.classList.remove('hide');
-        popup.classList.add('show');
-    });
-
-    barraca.addEventListener('mouseout', () => {
-        if (isMobileOrTablet()) return;
-        popup.classList.remove('show');
-        popup.classList.add('hide');
-    });
-
-    toggleBtn.addEventListener('click', () => {
-        if (produtos.style.display === 'none' || produtos.style.display === '') {
-            produtos.style.display = 'block';
-            toggleBtn.textContent = 'Esconder Produtos';
-        } else {
-            produtos.style.display = 'none';
-            toggleBtn.textContent = 'Mostrar Produtos';
-        }
-    });
-});
-
-popup.addEventListener('mouseover', () => {
-    if (isMobileOrTablet()) return;
-
-    popup.classList.remove('hide');
-    popup.classList.add('show');
-});
-
-popup.addEventListener('mouseout', () => {
-    if (isMobileOrTablet()) return;
-    popup.classList.remove('show');
-    popup.classList.add('hide');
-});

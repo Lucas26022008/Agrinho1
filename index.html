@@ -156,19 +156,23 @@
         <h3>Seja um colaborador e faça parte da Feira que se reinventou !</h3>
 
         <div class="formulario">
+            <form id="cadastroForm" onsubmit="return validarIdade()">
                 <label for="fullname">Nome Completo</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Seu Nome Completo">
-        
+                <input type="text" id="fullname" name="fullname" placeholder="Seu Nome Completo" required>
+                
                 <label for="boothname">Nome da Barraca</label>
-                <input type="text" id="boothname" name="boothname" placeholder="Nome da Barraca">
-        
+                <input type="text" id="boothname" name="boothname" placeholder="Nome da Barraca" required>
+                
                 <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Seu Telefone">
-        
+                <input type="tel" id="phone" name="phone" placeholder="Seu Telefone" required>
+                
                 <label for="products">Possíveis produtos à venda</label>
-                <input type="text" id="products" name="products" placeholder="Lista de produtos">
-        
-                <button class="botao-cadastro">Enviar</button>
+                <input type="text" id="products" name="products" placeholder="Lista de produtos" required>
+                
+                <label for="birthdate">Data de Nascimento</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <button type="submit">Enviar</button>
             </form>
         </div>
         
