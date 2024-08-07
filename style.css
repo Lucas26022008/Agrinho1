@@ -363,6 +363,16 @@ ol {
 .lado-direito {
     align-items: flex-end;
 }
+footer {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #999;
+    text-align: center;
+    padding: 10px;
+}
 
 
 /* Estilos para computador */
@@ -372,16 +382,7 @@ ol {
         vertical-align: middle;
     }
 
-    footer {
-        /* position: absolute; */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: #999;
-        text-align: center;
-        padding: 10px;
-    }
+    
 
     #logoreni {
         height: 150px;
