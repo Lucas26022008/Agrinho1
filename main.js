@@ -19,11 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         this.classList.remove('active');
     });
 
-    // Verificação e formatação do campo de telefone
     const telefoneInput = document.getElementById('telefone');
     telefoneInput.addEventListener('input', function () {
-        let telefone = this.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
-
+        let telefone = this.value.replace(/\D/g, '');
+        
         if (telefone.length > 0) {
             telefone = telefone.replace(/^(\d{2})(\d)/, '($1) $2'); // Adiciona os parênteses nos dois primeiros dígitos
         }
@@ -32,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             telefone = telefone.replace(/(\d{4})(\d{4})$/, '$1-$2'); // Adiciona o hífen antes dos quatro últimos dígitos
         }
 
-        this.value = telefone; // Atualiza o valor do input com o telefone formatado
-    });
+        this.value = telefone; 
+        });
 });
 
 function validarIdade() {
