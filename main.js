@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let telefone = this.value.replace(/\D/g, '');
         
         if (telefone.length > 0) {
-            telefone = telefone.replace(/^(\d{2})(\d)/, '($1) $2'); // Adiciona os parênteses nos dois primeiros dígitos
+            telefone = telefone.replace(/^(\d{2})(\d)/, '($1) $2'); 
         }
 
         if (telefone.length > 9) {
-            telefone = telefone.replace(/(\d{4})(\d{4})$/, '$1-$2'); // Adiciona o hífen antes dos quatro últimos dígitos
+            telefone = telefone.replace(/(\d{4})(\d{4})$/, '$1-$2'); 
         }
 
         this.value = telefone; 
