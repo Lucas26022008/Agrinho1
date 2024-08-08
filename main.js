@@ -18,6 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.popup').addEventListener('click', function () {
         this.classList.remove('active');
     });
+
+    // Verificação do campo de telefone
+    const telefoneInput = document.getElementById('telefone');
+    telefoneInput.addEventListener('input', function () {
+        if (this.value < 0) {
+            alert('O número de telefone não pode ser negativo.');
+            this.value = ''; // Limpa o campo se o número for negativo
+        }
+    });
 });
 
 function validarIdade() {
