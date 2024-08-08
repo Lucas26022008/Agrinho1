@@ -19,13 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
         this.classList.remove('active');
     });
 
-    // Verificação do campo de telefone
+    // Verificação e formatação do campo de telefone
     const telefoneInput = document.getElementById('telefone');
     telefoneInput.addEventListener('input', function () {
-        if (this.value < 0) {
-            alert('O número de telefone não pode ser negativo.');
-            this.value = ''; // Limpa o campo se o número for negativo
+        let telefone = this.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+
+        if (telefone.length > 0) {
+            telefone = telefone.replace(/^(\d{2})(\d)/, '($1) $2'); // Adiciona os parênteses nos dois primeiros dígitos
         }
+
+        if (telefone.length > 9) {
+            telefone = telefone.replace(/(\d{4})(\d{4})$/, '$1-$2'); // Adiciona o hífen antes dos quatro últimos dígitos
+        }
+
+        this.value = telefone; // Atualiza o valor do input com o telefone formatado
     });
 });
 
