@@ -11,3 +11,9 @@
 ## Como utilizar o site: 
 
 ### Ao acessar o site tem um cabeçalho que contem a logo do Programação Paraná, do colegio reni e o tema do Agrinho
+
+### Uma breve explicação doque é a Feira do Produtor 
+
+### as barracas que ja estão em funcionamento atualmente
+
+### um campo convidando as pessas interesadas a se tornarem comerciantes na Feira
